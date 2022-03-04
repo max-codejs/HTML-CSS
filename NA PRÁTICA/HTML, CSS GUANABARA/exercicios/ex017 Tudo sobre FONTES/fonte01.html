@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: 'work sans', Arial, Helvetica, sans-serif ;
+            /*
+            Medidas Absolutas
+            cm, mm, in, px, pt, pc
+
+            Medidas Relativas 
+            em, ex, rem, vw, vh, %
+            
+            PARA MEDIDAS DE FONTE , A W3C () RECOMENDA USAR AS PRINCIPAIS : em e px . 
+             */
+            
+            font-size: 1em;
+            /* a medida padrão das FONTES É 16px
+               16px Geralmente = 1em 
+             */
+            
+            font-weight: bolder; /* parametros: lighter, normal, bold, bolder, ou seja , Negritar  */ 
+            font-style: italic; /* Define itálico ou normal ******* VER MAIS CRTL + ESPACE */
+
+            /*font: italic bolder 3em 'work sans', sans-serif; */
+            /* Para caso eu queira otimizar posso pegar um atalho: SHORTHAND FONTE , desde que siga a seguinte ordem
+            --> font-style --> font-weight --> font-size --> font-family */
+
+        }
+        h1, h2 {
+            font-family: cursive ;
+            font: italic bolder 3em 'work sans', sans-serif;
+            /* PRINCIPAL: EXISTEM FONTES QUE NÃO AUTO ATRIBUEM AOS PARAMETROS CSS, NO CASO USEI A FONTE 'WORK SANS' PQ ELA É MAIS ABRANGENTE */ 
+        }
+        h3 {
+            font: normal lighter 4em 'work sans'; 
+        }
+    </style>
+
+
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia nulla laboriosam magni labore temporibus culpa dicta a autem sint omnis, similique, at ipsum, iusto nostrum cumque. Rem officia iusto vitae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet sint id dignissimos saepe placeat itaque, corporis laboriosam voluptate repellendus quibusdam exercitationem recusandae dolor, cumque quos sed. Esse maiores maxime aperiam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto est quae incidunt. Odio corporis voluptatibus dolorem molestias ad? Nulla minus distinctio quidem sint nisi voluptatem pariatur. Unde necessitatibus libero exercitationem.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tempora deserunt quasi. Quidem enim facilis eaque architecto sint cupiditate nostrum qui molestias labore dolore, obcaecati, non sequi voluptate id itaque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam dolor, vel est cupiditate tempore iure harum nihil mollitia cumque repudiandae? Vel magni ab accusamus assumenda doloremque architecto quaerat ratione dolores!</p>
+    <h2>Subtítulo do Exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, veritatis perferendis atque pariatur quia temporibus excepturi corrupti delectus illo tempore tenetur aperiam harum sint deserunt perspiciatis nam neque, dolore fugit! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, incidunt. Iure deleniti fuga eaque dolore cumque vel adipisci facilis. Dolorum maxime quaerat corrupti numquam mollitia cum, dolorem voluptatem libero deserunt.</p>
+    <h3>Mais Exemplos</h3>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi, ab architecto magni atque dolores sed, reprehenderit temporibus consequatur perferendis officiis pariatur labore porro vero excepturi quasi! Adipisci ut quam consectetur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, fugiat maxime minus vel labore autem rerum atque architecto magnam, cumque molestias in quo exercitationem minima eaque, non quia sequi laborum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, illum! Qui dolorem iste laboriosam ea aut recusandae eaque ipsum autem aspernatur distinctio! Perspiciatis impedit totam error iste numquam ipsam dolore.</p>
+    
+</body>
+</html>

@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif; 
+    background-color: red;
+    margin: 10px;
+}
+header {
+    background-color: rgb(229, 255, 0);
+    padding: 10px;
+    margin: 10px;
+
+}
+nav {
+    background-color: rgb(118, 118, 206);
+    padding: 5px;
+    box-shadow: 5px 5px 15px 5px black; /*Podemos configurar manualmente ou automático pelo dev tools*/
+}
+nav > a {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    margin-right: 20px;
+}
+nav > a:hover {
+    text-decoration: underline; /*Ao colocar o mouse por cima*/
+    
+}
+
+a:visited {
+   color: pink; /*Ao visitar estes links, os mesmos aparecerão pink */
+}
+
+a:active {
+    color: red; /*Quando eu clicar nos links, os mesmos ficaram vermelho*/
+}
+
+main {
+    background-color: burlywood;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px 30px; /*significa: 10px sup esquerdo e mais 10inf direito e 30px sup direito e mais 30px inf esq */
+    
+    
+}
+article{
+    background-color: lightgray;
+    padding: 12px;
+}
+article > aside {
+    background-color: lightskyblue;
+}
+article > p {
+    text-indent: 20px;
+}
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 4px;
+    margin: 0px;
+}
+footer > p {
+    margin: 0px; /*a margin do paragrafo p é muito grande padrão , dai eu tirei pra num atrapalhar*/
+}
+div#bola {
+    width: 100px;
+    height: 100px;
+    background-color: whitesmoke;
+    border-radius: 50px;
+    margin: 10px;
+    position: relative;
+}
+#bola:hover {
+    background-color: pink;
+    color: white;
+    transition-duration: 0.9s;
+    cursor: help;
+}
+
+.bolinha {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bolder;
+}
+.bolinha:active {
+    color: green;
+    
+}
+

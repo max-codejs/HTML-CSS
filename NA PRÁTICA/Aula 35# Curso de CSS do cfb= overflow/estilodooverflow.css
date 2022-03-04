@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+#dv1 {
+    border: 2px solid red;
+    width: 400px;
+    height: 300px;
+    /*overflow: hidden; oq passar do conteiner será ocultado*/
+    overflow: scroll; /* oq passar do conteiner, elemento pai, será exibido ao rolar barra de rolagem*/
+}
+
+#dv1 p { 
+    width: 500px; /* Aumentei a width do p, logo criou se a barra de rolagem horizontal*/
+}
+
+#img1 {
+    border: 2px solid red;
+    float: right;
+}

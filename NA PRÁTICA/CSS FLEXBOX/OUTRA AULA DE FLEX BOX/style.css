@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+section {
+    border: 3px solid red;
+    height: 500px;
+    display: flex; /* fará com que os elementos dentro do conteiner se alinhem tipo inline e so funfa para versoes do browser atualizadas , mas e se as versoes forem antigas?*/
+    display: -webkit-flex; /*Clientes browser opera versão antiga nao verão o efeito flex a não ser que eu insira tbm esta config do flex */
+    display: -moz-flex;/*Clientes browser mozila versão antiga nao verão o efeito flex a não ser que eu insira tbm esta config do flex */
+    /*min-width: 800px; Atingindo a min width, ele para de se espremer*/
+    flex-wrap: wrap; /*Fará com q as linhas da div abaixo se quebrem ao serem espremidas atingindo a largura minima de 100px q foi o selecionado*/
+    -webkit-flex-wrap: wrap; /*Sempre colocar para atingir tbm browsers desatualizados*/
+    -moz-flex-wrap: wrap; /*Sempre colocar para atingir tbm browsers desatualizados*/
+    
+    justify-content: flex-start; /*FLEX-START, FLEX-CENTER, FLEX-END :: alinhamento horizontal*/
+    -webkit-justify-content: flex-start;/*Sempre colocar para atingir tbm browsersdesatualizados*/
+    -moz-justify-content: flex-start; /*Sempre colocar para atingir tbm browsers desatualizados*/
+
+    align-items: flex-end; /*Alinhamento vertical*/
+
+    flex-direction: row; /* DIREÇÃO DOS ELEMENTOS--> ROW : REVERSE, COLUMN : REVERSE /*
+
+    /* Os comando acima so funcionarão se tiver previamente o comando display: flex */
+
+}
+
+div {
+    border: 1px solid violet;
+    /*flex: 1; Fará no caso  as div se ajustarem à largura do conteiner section (pai) */
+    width: 100px;
+    font-weight: bolder;
+    color: violet;
+    background-color: black;
+    
+
+}

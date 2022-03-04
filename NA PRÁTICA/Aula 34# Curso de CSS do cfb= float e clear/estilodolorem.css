@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+img {
+    border: 2px solid red;
+}
+
+#img1 {
+    float: left; /*Significa: flutue à esquerda*/
+}
+#img2 {
+    float: right; /*Significa: flutue à direita*/
+}
+.cancelafloat {
+    /*clear: left; Esta propriedade limpa o float ou simplesmente cancela na posição escolhida*/
+    clear: both; /*Esta propriedade limpa o float ou simplesmente cancela em ambas posições*/
+}
+div {
+    max-width: 600px;
+    height: 300px;
+    border: solid red 3px;
+}
+#testimg {
+    float: left;
+    margin-right: 20%;
+}
+
+.nofloat {
+    clear: both;
+}

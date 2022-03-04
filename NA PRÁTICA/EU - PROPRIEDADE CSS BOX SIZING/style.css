@@ -1,0 +1,27 @@
+@charset 'UTF-8';
+
+#box1 {
+    box-sizing: content-box; /* padrao de fabrica */
+    width: 200px;
+    height: 200px;
+    border: 2px solid blue;
+    padding: 2px;
+    margin: 2px;
+    color: antiquewhite;
+    background-color: black;
+    font-weight: bolder;
+    display: inline-block;
+}
+#box2 {
+    box-sizing: border-box; /*lembrando que o MARGIN não conta como width e height */
+    width: 200px;
+    height: 200px;
+    border: 2px solid blue;
+    padding: 2px;
+    margin: 2px; /*lembrando que o MARGIN não conta como width e height */
+    color: antiquewhite;
+    background-color: black;
+    font-weight: bolder;
+    display: inline-block;
+}
+

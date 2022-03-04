@@ -1,0 +1,23 @@
+@charset    "UTF-8";
+
+.quebra {
+    display: block; /* Para a caixa de text ficar na linha de baixo, pois input é inline */
+}
+
+form {
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #eee;
+}
+
+.inputsdiferentes {
+    display: flex;
+}
+
+.espaco {
+    margin-bottom: 15px;
+}
+.espacotopo {
+    margin-top: 15px;
+}

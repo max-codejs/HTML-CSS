@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+* {
+    color: blue;
+}
+html {
+    color: yellow;
+}
+body {
+    color: gray;
+}
+#d1 {
+    color: red;
+}
+#d2 {
+    color: pink;
+}
+#d3 {
+    color: black;
+    border: 3px solid red;
+    width: 100%;
+    margin: auto;
+}
+h1, p {
+    color: inherit; /*Significa que esses dois elementos herdará a cor do pai NO MESMO CONTEINER conteiner*/
+    /*color: initial; deixará a cor inicial da propriedade ou seja #000 PRETO : PADRAO */
+    border: inherit;
+    width: inherit; /* Largura do pai*/
+    
+}
+img {
+    float: left;
+}
+#d3 p {
+    clear: both;
+}

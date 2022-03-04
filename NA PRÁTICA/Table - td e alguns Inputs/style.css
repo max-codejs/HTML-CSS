@@ -1,0 +1,12 @@
+@charset    "UTF-8";
+
+p {
+    font-family: papyrus; /*n precisa de aspas quando esta só uma palavra e n frase*/
+    font-style: italic;
+    letter-spacing: 10px; /* ESPAÇAMENTO DAS LETRAS*/
+
+}
+span {
+    line-height: 1.9em;
+    letter-spacing: 10px;
+}

@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+}
+.conteiner {
+    max-width: 600px;
+    height: 300px; /* se eu aqui coloco height, os itens irão ajustar conforme a mesma height, ativando automaticamente a fução padrao aligm-itens: stretch.*/
+    margin: 0 auto;
+    border: 2px solid black;
+    /*display: flex;*/ 
+    /*flex-direction: column-reverse; row é o padrão que não altera em nada */
+    
+
+}
+.flexivel {
+    display: flex; 
+}
+.horizontal {
+    flex-direction: row; /*SÓ FUNFA COM DISPLAY: FLEX PRÉVIO ; PADRÃO: ROW*/ 
+}
+.vertical {
+    flex-direction: column; /*SÓ FUNFA COM DISPLAY: FLEX PRÉVIO*/
+}
+.quebra {
+    flex-wrap: wrap; /*SÓ FUNFA COM DISPLAY: FLEX PRÉVIO ; PADRÃO: no-wrap, não quebrar*/
+}
+.alinhamentodositens {
+    justify-content: space-between; /*SÓ FUNFA COM DISPLAY: FLEX PRÉVIO ; START, CENTER, END SÃO OS MAIS USADOS PARA ALINHAR ITENS; padrão: start*/
+}
+
+.item {
+    margin: 5px;
+    padding: 5px;
+    background-color: #447;
+    width: 50px;
+    height: 70px;
+    color: white;
+}
+.div2 {
+    width: 800px;
+    height: 300px;
+    margin: 90px auto;
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between; /*Alinha o main acssis*/
+    align-items: center; /*Alinha o main acssis*/
+    color: saddlebrown;
+    font-weight: bolder;
+    background-image: url(tel.png);
+    background-repeat: no-repeat;
+    background-size: 100px; /*Só funciona se tiver previo background-image*/
+    
+}
+.div2 p {
+    border: 5px dotted black;
+    background-color: green;
+
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="estilodoform.css">
+
+</head>
+<body>
+    <form name="f_cadastro" action="#" method="get"> <!--São os tres parametros que mais usamos para form. Form é display block-->
+        <label>Nome:</label> <!--O label é tipo a etiqueta da tag input e é inline block-->
+        <input type="text" name="f_nome" placeholder="Digite seu nome"> <!--Veja que o parametro placeholder é camuflará uma certa ordem-->
+        <div class="inputsdiferentes">
+            <input type="submit" name="f_nome" value="Shazam"> <!--o method e action do form só funcionarão quando eu apertar o botão do input submit-->
+            <input type="reset" name="f_nome" value="Limpar"> <!--fará a limpeza dos campos dos formularios-->
+            <input type="button" name="f_nome" value="dependedojs"> <!--Aqui quem dará o comportamento a ele é o javascript-->
+        </div>
+    
+    </form>
+    <br>
+    <br>
+    <form name="f_cadastro" action="#" method="get">
+        <label>Username:</label>
+        <input class="espaco quebra" type="text" name="f_username" maxlength="20" size="25" placeholder="Digite seu nome">
+
+        <label>Password:</label>
+        <input class="espaco quebra" type="password" name="f_senha" maxlength="10" size="15" placeholder="Digite sua senha">
+
+        <label class="quebra">Esportes Favoritos:</label>
+        <input type="checkbox" name="f_fut">Futebol
+        <input type="checkbox" name="f_basq">Basquete
+        <input type="checkbox" name="f_nat" checked>Natação <!--VEJA Q ao colocar checked, ficará por padrão marcado o elemento selecionado-->
+
+        <label class="quebra espacotopo">Possui carro?</label> <!--input radio tem que ter muito cuidado pois deverá ter o mesmo name, para que possamos selecionar ou uma ou outra bolinha-->
+        <input type="radio" name="f_carro" value="s">Sim
+        <input type="radio" name="f_carro" value="n" checked>Não
+
+        <input class="quebra espacotopo" type="submit" name="f_entrar" value="Entrar"> <!--Veja que tem duas classes diferentes separadas pelo espaçamento-->
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,268 @@
+@charset "UTF-8"; 
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Zen+Tokyo+Zoo&display=swap');
+
+@font-face {
+    font-family: 'android' ;
+    src: url('../fontes/idroid.otf') format('opentype');
+}
+
+:root {
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #3113da;
+    --cor6: #35B0E6;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif; 
+    --fonte-destaque: 'Zen Tokyo Zoo', cursive;
+    --fonte-android: 'android', cursive; 
+}
+
+body {
+    background-color: rgb(196, 196, 223); 
+    font-family: var(--fonte-padrao);
+}
+
+* { /* Quando eu colocar um asterisco, significa que é uma configuração global , ou seja, será modificado tudooo */
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor0), var(--cor6)); /*DEGRADE*/
+    min-height: 150px;
+    text-align: center; /* Aqui deixa as coisas no centro da largura inserida*/
+    /*margin-top: 20px; // se eu colocasse esse, fugiria do header , entao melhor mexer no padding*/ 
+    padding-top: 40px;
+    
+}
+
+header  h1 {
+    color: var(--cor3);
+    font-family: var(--fonte-destaque);   
+    margin-bottom: 20px; 
+    font-size: 3em;
+    text-shadow: 2px 2px 0px black; /* Sombreamento do text */
+    font-weight: normal;
+}
+header p {
+    color: red;
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: auto; /*Aqui deixou os 600px da tag p no meio da largura total */
+    padding-right: 10px; /*Aqui fica mais bonitinho a aparencia com padding ao minimizar a width ao máximo*/
+    padding-left: 10px;
+    text-shadow: 2px 2px 0px black; /* Sombreamento do texto */
+
+
+}
+nav {
+    background-color: black;
+    height: 20px;
+    padding: 10px;
+    text-align: center;
+
+}
+nav > a {
+    color: darkgreen;
+    padding: 10px;
+    border-radius: 10px; /*Não aparece pq tá com fundo preto*/
+    text-decoration: none; /*É para nao aparecer o sublinhado do LINK*/ 
+    font-weight: bold;
+    cursor: progress; /* Ao entrar dentro da tag a, o cursor ficará com efeito carregamento */
+
+    
+}
+nav > a:hover { /*Ao colocar o mouse em cima de: */ 
+    background-color: darkblue; /* Aqui aparece o border radius q coloquei acima*/
+    color: rgba(224, 246, 23, 0.993);
+    transition-duration: 1s; /*interessante esta propriedade */
+
+}
+nav a::before {
+    content: '\27A1'; /*Barra tem q ser invertida para acionar o emoji emojipedia.com */
+    color: violet;
+}
+
+nav a::after { /*sig: depois de todos os links do nav vai aparecer o conteúdo, content*/
+    content: ' [link]'; /*observe que dei um espacinho apos a aspa para fixar tbm*/
+    color: violet;
+}
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding: 0px 20px 0px 20px; /*faz com que as letras se afastem um pouco do inicio da borda */
+    border-bottom-left-radius: 10px; /* Deixa o final das bordas meio q redondinha embaixo*/
+    border-bottom-right-radius: 10px; /* Deixa o final das bordas meio q redondinha embaixo*/
+    border-width: 20px; /*assista vários vídeos para saber diferenciar border,padding, margin outline */
+    border-style: solid;
+    border-color: rgb(216, 19, 12);
+    outline-width: 2px; /*Outline é uma propriedade que é pouco usada e veja que acabou atrapalhando o main*/
+    outline-style: dotted; 
+    outline-color: #0f199b;
+    text-align: justify;
+    background-color: red;
+    box-shadow: 5px 5px 100px black; /*horizontal, vertical, espalhamento, cor */
+}
+main img { 
+    width: 100%; /* isso vai fazer com que a minha imagem se esprema e se adapte ao tamanho da largura do site quando eu diminuir ou aumentar esta mesma largura. LEMBRE - SE: Que é 100 por cento da width do main. No caso acima 100 por cento de 1000 px de width */
+}
+
+main img.pequena {
+    max-width: 350px; 
+    display: block; /* a box ocupa a linha inteira */
+    margin: auto; /* Este comando só funciona se a img for transformada em display block*/
+
+}
+div.video {
+    background-color: var(--cor4);
+    margin: 0px -20px 30px -20px ; /* aqui eu tiro os 20px do padding do main acima*/
+    padding: 20px;
+    position: relative; /* A tag position é muito interessante. Aprenda de vdd sobre ele em: https://www.youtube.com/watch?v=zPlt84S1L0U , no canal do Tiger Codes . */
+    padding-bottom: 58%;
+
+}
+div.video > iframe {
+    /* A tag position é muito interessante. Aprenda de vdd sobre ela em: https://www.youtube.com/watch?v=zPlt84S1L0U , no canal do Tiger Codes . */
+    position: absolute; 
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+main  h1 { /*Tanto faz colocar o > , antes do h1 ou não */ 
+    color: var(--cor2);
+    font-family: var(--fonte-android);
+    font-weight: normal;
+    font-size: 1.8em;
+    text-align: center;
+    margin-top: 10px;
+}
+main h2 {
+    color: var(--cor5);
+    font-family: var(--fonte-android);
+    font-weight: normal;
+    background-image: linear-gradient(to right, var(--cor6), transparent);
+    font-size: 1.3em;
+    text-indent: 8px; /* É Tipo um espaçamento podemos dizer um travessão*/
+}
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px; /* É Tipo um espaçamento podemos dizer um travessão*/
+    font-size: 1em;
+    line-height: 2em; /* É o espaçamento entre linhas em relação a altura */
+
+}
+
+main strong {
+    color: var(--cor4);
+    background-color: yellowgreen;
+    font-weight: bold;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: aqua;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+aside {
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgb(10, 10, 10);
+}
+
+a.externo::after {
+    content: '\00A0\1F517';
+}
+
+aside > h3 {
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+    margin: -10px; /*Interessante quando coloca margin negativa */
+}
+
+aside > ul {
+    list-style-type: '\2714\00A0\00A0'; /*para entender estes codigos: emojipedia.org */
+    list-style-position: inside;
+    columns: 2; 
+}
+
+footer {
+    background-color: var(--cor5);
+    color: white;
+    padding: 5px;
+    text-align: center;
+    font-size: 0.8em;
+    
+    
+}
+footer a {
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: black;
+}
+footer a:visited { /* q já foi visitado*/
+    color: yellow;
+}
+footer a:active { /* AO RECEBER ONCLICK */
+    color: aqua;
+}
+
+/*////////////////////////////////////////////////////////////////////////////////*/
+
+.rodolfodev {
+    font-weight: bold;
+    background-color: white;
+    text-align: center;
+    
+}
+
+button { /* Alinhei com position e transform*/
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%); 
+    background-color: #323232;
+    color: white;
+    width: 100px;
+    height: 80px;
+    font-size: 20px;
+    border: 3px solid #0f199b;
+    border-radius: 10px;
+    cursor: pointer; /*ao entrar aqui com mouse, ele vira uma mãozinha ou algo q escolher*/
+    /*box-sizing: content-box; esse é o padrão para todo elemento*/
+    box-sizing: border-box; /* Este comando fará q o elemento selecionado tenha a largura e altura que eu delimitei independente deu crescer padding, bargin, etc .. */
+}
+
+button:hover {
+    background-color: white;
+    color: blue;
+    border-color: blueviolet;
+    transition-duration: 3s;
+}

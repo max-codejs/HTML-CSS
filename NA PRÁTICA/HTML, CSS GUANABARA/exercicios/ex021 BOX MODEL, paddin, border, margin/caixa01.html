@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 { /* box-level,ou, display: block*/
+            
+            
+            background-color: rgb(226, 208, 43);
+            height: 300px;
+            width: 300px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: black;
+
+            /*border: 10px solid burlywood; ou podemos simplificar com shorthand*/
+
+            /*A medida 'Padding' ela é geralmente dividida em quatro partes */
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            /*padding: 20px auto 10px auto; ou podemos simplificar com shorthand*/
+
+            margin-top: 40px; /* Lembrar sempre de começar de cima : top, como se fosse um relogio*/
+            margin-right: 10px;
+            margin-bottom: 40px;
+            margin-left: 20px;
+            
+            /*margin: auto; -> é um comando que substitui todos os quatro de cima, fazendo com que minha caixa no caso aqui, h1 ficasse centralizada tanto na Height quanto width! */
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: grey;
+
+            outline: 5px dashed grey; /*ou podemos simplificar com shorthand*/
+            
+            
+            
+
+        }
+        .exemplo { 
+            text-align: center; /*É igual ao margin: auto; só que para textos*/
+            color: green;
+            font-weight: bolder;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        a { /* inline-level,ou, display: inline*/
+            
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <!--Toda vez que eu chamar o DevTools crtl + shift + i , e ver 'user agent', é o robo que está mostrando a configuração padrão automática daquele elemento. -->
+    
+    <h1>Exemplo de caixa box-level</h1>
+  
+    
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links sao exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona. </p>
+    <p class="exemplo">Text-align center para caso for um texto.</p>
+
+
+    
+</body>
+</html> 

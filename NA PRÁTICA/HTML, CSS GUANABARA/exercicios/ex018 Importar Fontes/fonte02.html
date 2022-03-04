@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+
+    <style>
+        
+        @font-face {
+            font-family: 'LOVE' ;
+            src: url('fonts/love story.otf') format('opentype') , url('fonts/love story.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            /* Posso de boas colocar dois formatos , caso o browser não aceite um , vai o outro 
+            /* DAFONT.COM é um site onde eu posso pegar/importar algumas fontes mais bunitinhas personalizadas */
+            /* 
+                Tipos de Format ()
+                    opentype (otf) mais usado
+                    truetype (ttf) mais usado 
+                    embedded-opentype 
+                    truetype-aat (Apple Advanced Typography) 
+                    svg
+            */
+        
+        }
+        @font-face {
+            font-family: 'noite';
+            src: url('fonts recentes/Midnight in October - OTF.otf') format('opentype'), url('fonts recentes/Midnight in October - TTF.ttf') format('truetype');
+            
+        }
+
+        
+        body { 
+            font-family: 'noite';
+            font-size: 30px;
+            color: blue;
+        }
+        h1 {
+            font-family: 'Times New Roman', Times, serif; 
+            font-size: 50px;
+            font-weight: bolder;
+            font-style: italic;
+            color: red;
+        }
+        h2 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 50px;
+            font-weight: bolder;
+            font-style: italic;
+            color: red;
+
+
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt accusantium exercitationem quis quia dolorum tenetur et necessitatibus at consectetur obcaecati nemo optio, nihil aliquid earum nam! Magnam saepe odio veniam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, expedita! Repudiandae recusandae iste quidem distinctio qui laboriosam impedit deleniti autem amet ab minima molestiae blanditiis, maxime voluptatem labore dolores suscipit!</p>
+    <h2>Sub-Título</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim magnam velit adipisci, ad accusamus quos quidem temporibus, incidunt omnis molestias qui cum architecto. Qui, facere magnam. Voluptatem reprehenderit debitis eveniet? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit cum doloribus numquam, dolor mollitia vero inventore repellat corrupti beatae illo distinctio doloremque perferendis iusto voluptates sapiente vel corporis saepe unde.</p>
+    
+</body>
+</html>

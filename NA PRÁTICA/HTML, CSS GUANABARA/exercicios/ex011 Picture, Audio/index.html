@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <H1>Imagem Dinâmica</H1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <!--Lembre-se : Coloque a tag source , por sequencia. Começando da imagem menor em relação a largura e pixels-->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"> <!-- Explicando : a minha fonte específica dentro de srcset, só vai ser carregada caso a largura máxima for até 1050 pixels. -->
+        <!-- Por padrão , dentro do comando picture é obrigatório ter a Tag <img> . -->
+        
+        <img src="imagens/foto-g.png" alt="imagem flexível">
+    </picture>
+    <h1>Reproduzindo Áudios</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio src="midia/minha-musica-youtube.mp3" controls autoplay preload loop></audio> <!--Existem mais atributos desta tag-->
+    <P>Infelizmente seu navegador não consegue reproduzir áudio. </P> <a href="midia/minha-musica-youtube.mp3">Clique aqui para baixar o arquivo MP3</a>
+    
+
+    <h2>Outra maneira de carregar áudios em meu site: </h2>
+    <audio controls loop preload="auto" autoplay> 
+        <source src="midia/minha-musica-youtube.mp3" type="audio/mpeg">  <!-- Aqui tenho a mídia em fmt .mp3-->
+        <source src="midia/minha-musica-youtube.ogg" type="audio/ogg"> <!--Usaria este comando caso tivesse fmt .ogg-->
+        <source src="midia/minha-musica-youtube.wav" type="audio/wav"> <!--Usaria este comando caso tivesse fmt .wav-->
+        <p>Infelismente seu navegador não consegue reproduzir áudio.</p> <!--Reproduzirá caso não execute os áudios pelo navegador -->
+        <a href="midia/minha-musica-youtube.mp3">Clique aqui para baixar o arquivo MP3</a>
+    </audio>
+
+    
+</body>
+</html>

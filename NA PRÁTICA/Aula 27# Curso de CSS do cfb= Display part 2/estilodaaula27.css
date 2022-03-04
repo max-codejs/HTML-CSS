@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+div {
+    background-color: tomato;
+    width: 200px;
+    height: 200px;
+    border: 3px solid black;
+    box-sizing: border-box;
+    text-align: center; /*Alinhamento horizontal e vertical-align: alinhamento vertical*/
+    display: table-cell; /* Aqui eu tornei uma célula de tabela */
+    vertical-align: middle; /* Esta propriedade depende do display: table-cell pra funfa */ 
+    
+}
+
+ol, ul, li {
+    border: 1px solid blue;
+    margin: 0px;
+    padding: 0px;
+    
+}
+ol {
+    display: table;
+    margin-top: 30px;
+    width: 300px;
+    height: 100px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+ul {
+    display: table-row;
+}
+li {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.primeira {
+    color: blueviolet;
+    background-color: cadetblue;
+}
+

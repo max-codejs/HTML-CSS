@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+table {
+    width: 900px;
+    margin: 0 auto;
+    border-collapse: collapse; /* Faz as bordas se unirem */
+    display: table; /*Estudar este comando depois*/
+    text-align: center;
+}
+
+table tr td {
+    background-color: aqua;
+    height: 300px;
+    border: 3px solid black;
+    display: table-cell; /*Estudar este comando depois*/
+    vertical-align: middle; /*Comando interessante pra posicionar */
+    
+}

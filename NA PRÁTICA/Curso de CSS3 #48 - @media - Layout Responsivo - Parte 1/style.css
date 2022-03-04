@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+img {
+    width: 500px;
+}
+
+body {
+    background-color: blue; /*Cairá nessas configurações caso as media nao forem atendidas*/
+}
+
+/*@media screen and (max-width: 600px) {
+    body {
+        background-color: black;
+    }
+}
+@media screen and (max-width: 1000px) {
+    body {
+        background-color: red;
+    }
+}*/
+
+@media screen and (min-width: 0px) and (max-width: 600px) {
+    body {
+        background-color: black;
+    }
+    img {
+        width: 100%;
+    }
+    h1 {
+        color: white;
+        text-align: center;
+    }
+}
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+    body {
+        background-color: red;
+    }
+}
+@media screen and (min-width: 1001px) and (max-width: 1050px) {
+    body {
+        background-color: violet;
+        color: blue;
+    }
+    h1, img {
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+}
+

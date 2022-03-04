@@ -1,0 +1,76 @@
+@charset "UTF-8"; /*Coloque este comando em toda vez que abrir link externo a fim de manter acentuações */
+
+
+h1 {
+    position: static; /* Toda tag já vem com configuração static de posição*/
+}
+
+.box {
+    width: 400px;
+    height: 400px;
+    border: 5px solid black;
+    margin: 20px auto;
+    position: relative;    
+}
+
+
+.item1, .item2, .item3 {
+    width: 150px;
+    height: 150px;
+}
+
+.item1 {
+    background-color: blue;
+    position: relative; /* ao usa este comando ganhamos o direito as propriedades abaixo*/
+    left: 20px; /* Ou seja: aqui ele foi empurrado da esquerda para a direit uma força de 20px em relação a posição que ele ( item 1) estava */
+    top: 20px; /*Relative ao conteudo da caixa principal ou seja o .box*/
+    
+}
+
+
+.item2 {
+    background-color: red;
+    position: absolute; /* Se uso somente este comando sem que esteja no .box relative, a posição dele será absoluta em relaçao a todo o espaço do documento body ou seja elemento pai de todos*/
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* SE uso esta propriedade, deixo o item 2 centralizado no meio do pai dele*/
+}
+
+.item3 {
+    background-color: black;
+    position: fixed; /*Deixa fixo na tela mantendo */
+    right: 100%;
+}
+
+nav {
+    background-color: coral;
+    color: white;
+    position: sticky;
+    top: 0%;
+}
+
+.text {
+    width: 150px;
+    height: 600px;
+    text-align: justify;
+}
+.box2 {
+    width: 150px;
+    height: 150px;
+    border: 5px solid black;
+    margin-left: auto; /* Deixa o conteudo ao máximo da direita possivel*/
+    position: sticky;
+    top: 0%;
+    background-color: black;
+}
+.central {
+    font-weight: bolder;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+

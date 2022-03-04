@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.lista1, .lista2 {
+    list-style-type: circle;
+    list-style-position: inside;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: blue;
+    background: linear-gradient(to right, red, blue)
+}
+.item3 {
+    padding: 20px;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: black;
+}

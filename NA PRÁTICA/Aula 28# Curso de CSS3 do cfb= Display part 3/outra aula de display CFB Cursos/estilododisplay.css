@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+
+div, span {
+    border: 5px solid #000;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    
+}
+#d1 {
+    /*display: none; */
+    visibility: hidden; /*Aqui deixa a div 1 escondida diferente de none acima q some*/
+    display: block; /*Por padrão, já é block*/
+}
+
+#dpontoum {
+    display: block; /*Por padrão, já é block*/
+}
+
+#s1 {
+    display: inline; /*Por padrão, já é inline*/
+}
+
+#d2 {
+    display: inline-block; /* Tornei inline-block só para receber as configurações globais do block de por exemplo: width e height lá em cima */
+}
+
+#s2 {
+    display: inline-block; /*Por padrão, já é inline, mas tonei inline-block. Isso fez com que ele ocupasse a mesma linha de um inline anterior e ainda se adequasse as formatações globais lá de cima  */
+}
+
+#s2pontoum {
+    display: block; /*Por padrão, já é inline, mas tornei block*/   
+}
+    
+
