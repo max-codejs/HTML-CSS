@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando pseudo elementos</title>
+
+    <style>
+        p::first-line {
+            color: violet;
+        }
+        p::first-letter {
+            color: red;
+            font-weight: bolder;
+            font-size: x-large;
+        }
+        h1::first-letter {
+            color: pink;
+        }
+        p::selection {
+            background-color: black;
+            color: pink;
+            font-weight: bold;
+
+        }
+        li {
+            list-style: none;
+            list-style-image: url(./imagens/favicon-16x16.png);
+        }
+        li::after {
+            content: ''; /*tem q usar este se não num aparece os de baixo*/
+            display: inline-block; /*tem q usar este se não num aparece os de baixo*/
+            width: 30px;
+            height: 30px;
+            background-image: url(./imagens/coracao/Coração\ 192x192.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rerum accusantium sapiente rem mollitia nemo dolor voluptas magnam perferendis, a nostrum maxime, quod porro vero dolore tempora non suscipit voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Unde excepturi accusamus mollitia dolor autem commodi ipsa corrupti expedita vitae, ullam ipsam magni voluptate! Hic obcaecati tempore rerum ex aliquam ab!</p>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+</body>
+</html>
