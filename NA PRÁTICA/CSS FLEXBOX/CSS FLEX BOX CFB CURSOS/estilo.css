@@ -25,9 +25,11 @@ body {
 }
 .quebra {
     flex-wrap: wrap; /*SÓ FUNFA COM DISPLAY: FLEX PRÉVIO ; PADRÃO: no-wrap, não quebrar*/
+    align-content: flex-start; /* após quebrar, os itens se agruparão em baixo sem espaço*/
 }
 .alinhamentodositens {
     justify-content: space-between; /*SÓ FUNFA COM DISPLAY: FLEX PRÉVIO ; START, CENTER, END SÃO OS MAIS USADOS PARA ALINHAR ITENS; padrão: start*/
+    /*justify-content: space-evenly;  AQUI DEIXA OS ESPAÇOS COM TAMANHOS IGUAIS*/
 }
 
 .item {
@@ -37,6 +39,16 @@ body {
     width: 50px;
     height: 70px;
     color: white;
+}
+span {
+    display: flex;
+    height: 100px;
+    background-color: #000;
+    color: white;
+    flex-shrink: ; /*estude mais estas*/
+    flex-grow: ; /*estude mais estas*/
+}
+    
 }
 .div2 {
     width: 800px;
@@ -58,3 +70,4 @@ body {
     background-color: green;
 
 }
+

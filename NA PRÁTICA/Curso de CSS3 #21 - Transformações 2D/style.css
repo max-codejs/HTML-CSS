@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+#dv1 {
+    width: 200px;
+    height: 200px;
+    border: 2px solid violet;
+    /*transform: translate(100px,90px); Mover ou Translatar do ponto de origem eixo X (esquerda para direita , Y (de baixo para cima) */
+    /*transform: rotate(-45deg);  degree significa graus em portugues. Pode ter valor negativ*/
+    /*transform: scale(2) escala padrão (1). serve para dobra o tamanho normal, triplicar... */
+    /*transform: skew(10deg,10deg); SKEW == Inclinar*/
+
+    /*POSSO USAR VARIOS ATRIBUTOS AO MESMO TEMPO DO TRANSFORM. VEJA ABAIXO */
+
+    transform: translate(100px,90px) rotate(-45deg) scale(2) skew(10deg,10deg);
+}
