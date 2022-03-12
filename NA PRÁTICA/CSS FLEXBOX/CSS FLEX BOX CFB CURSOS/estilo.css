@@ -40,9 +40,10 @@ body {
     height: 70px;
     color: white;
 }
-span {
+.encolher {
     display: flex;
     height: 100px;
+    width: 800px;
     background-color: #000;
     color: white;
     flex-shrink: ; /*estude mais estas*/
@@ -51,7 +52,7 @@ span {
     
 }
 .div2 {
-    width: 800px;
+    width: 1000px;
     height: 300px;
     margin: 90px auto;
     border: 1px solid red;
