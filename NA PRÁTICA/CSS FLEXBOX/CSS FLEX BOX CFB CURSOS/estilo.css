@@ -41,16 +41,29 @@ body {
     color: white;
 }
 .encolher {
-    display: flex;
-    height: 100px;
-    width: 800px;
+    height: 50px;
+    border: 2px solid floralwhite;
+    padding: 5px;
     background-color: #000;
     color: white;
-    flex-shrink: ; /*estude mais estas*/
-    flex-grow: ; /*estude mais estas*/
-}
+    
     
 }
+.tamanho1 {
+    flex-grow: 1; /*flex-grow: o padrão é 0, é aplicado somente em ITENS e não em conteiner*/
+}
+.tamanho2 {
+    flex-grow: 2;
+}
+.tamanho3 {
+    flex-grow: 3;
+}
+.reduzir {
+    /* flex-shrink: 1;  flex-shrink: 1 é o padrão ou seja, reduzira para caber no conteiner*/
+    flex-shrink: 0; /* Este elemento não se reduzirá ou se espremerá no conteiner*/
+}
+
+
 .div2 {
     width: 1000px;
     height: 300px;
