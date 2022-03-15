@@ -72,6 +72,7 @@ body {
     display: flex;
     justify-content: space-between; /*Alinha o main acssis*/
     align-items: center; /*Alinha o main acssis*/
+    /*align-items: stretch; stretch é um atributo que completa o espaçamento*/
     color: saddlebrown;
     font-weight: bolder;
     background-image: url(tel.png);

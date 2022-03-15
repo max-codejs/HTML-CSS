@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+@keyframes mudarLarguraCor {
+    /*from {background-color: #000; width: 300px}
+    to {background-color: white; width: 1000px} */
+    0% {background-color: white; width: 100px} /*tbm posso fazer por porcentagens passando do white para black no exemplo aqui*/
+    25% {background-color: blue; width: 200px}
+    75% {background-color: red; width: 300px}
+    100% {background-color: black; height: 50px} 
+    
+}
+
+@keyframes mudarPosition {
+    from {left: 500px; top: 500px; text-align: center;}
+    to {left: 0px; top: 0px; text-align: justify;}
+}
+
+@keyframes mudarBordas {
+    from {border: 2px dotted red;}
+    to {border: 9px dotted pink;}
+}
+
+p {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: justify;
+    animation-name: mudarPosition;
+    animation-duration: 1s;
+    animation-delay: 3s; /* Delay == atraso: apos carregar, executar se á depois de 3s*/
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+    border: 5px solid brown;
+    background-color: #000;
+    animation-name: mudarLarguraCor,mudarBordas;/*aqui estou querendo q execute duas keyfremes*/
+    animation-duration: 3s,5s; /*na sequencia: 3s para mudarLarguraCor e 5s para mudarBordas*/
+
+}
