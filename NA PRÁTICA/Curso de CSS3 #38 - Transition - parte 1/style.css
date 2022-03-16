@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+P {
+    width: 300px;
+    height: 250px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: justify;
+    transition-property: background-color, width, padding;
+    /*transition-duration: 3s,2s,1s; 3s para background-color,2s para width, ... */
+    transition-duration: 2s; /* Esta duração só valerá para as propriedades acima. As demais terão mudanças instantâneas */
+    /*transition-delay: 1s; Delay == atraso; demorará 1s para executar as transition acima*/
+    transition-timing-function: ease-in; /*esta propriedade é irrelevante para mim */
+
+    transition: ; /* posso simplificar tbm. Estude depois esta */
+}
+
+p:hover {
+    width: 500px;
+    height: 120px;
+    background-color: red;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
