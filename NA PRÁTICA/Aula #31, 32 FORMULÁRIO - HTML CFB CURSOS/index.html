@@ -23,7 +23,7 @@
     <br>
     <form name="f_cadastro" action="#" method="get">
         <label>Username:</label>
-        <input class="espaco quebra" type="text" name="f_username" maxlength="20" size="25" placeholder="Digite seu nome">
+        <input class="espaco quebra" type="text" name="f_username" maxlength="20" size="25" placeholder="Digite seu nome"> <!--Imput é inline-block, mas aqui ordenei q ele pulasse uma linha via class.quebra-->
 
         <label>Password:</label>
         <input class="espaco quebra" type="password" name="f_senha" maxlength="10" size="15" placeholder="Digite sua senha">
@@ -38,7 +38,7 @@
         <input type="radio" name="f_carro" value="n" checked>Não
 
         <input class="quebra espacotopo" type="submit" name="f_entrar" value="Entrar"> <!--Veja que tem duas classes diferentes separadas pelo espaçamento-->
-
+        <input type="reset" name="f_cadastro" value="Limpar">
     </form>
 </body>
 </html>
