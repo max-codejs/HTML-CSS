@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: gray;
+}
+
+.button {
+    width: 150px;
+    display: block;
+    margin: 50vh auto;
+    text-align: center;
+    color: pink;
+    text-decoration: none;
+    border: 3px solid pink;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: black;
+    font-weight: bolder;
+    font-size: 1.2em;
+    text-transform: capitalize; /* Deixa a primeira letra maiuscula*/
+    
+}
+.button:hover {
+    animation: pulsar 1s ease-in-out;
+}
+@keyframes pulsar {
+    0% {
+        box-shadow: 
+        0 0 25px darkred, 
+        0 0 50px red;
+    }
+}
