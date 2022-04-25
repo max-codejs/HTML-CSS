@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando Forms</title>
+    <style>
+        h3 {
+            text-transform: capitalize; /* Primeiras letras ficam maiúsculas*/
+        }
+    </style>
+</head>
+<body>
+    <h3>encontre no google</h3>
+    <form action="https://www.google.com/search">
+        <label for="q">O que deseja pesquisar?</label> <!--O for do label ta vinculado ao id do input de baixo*/ -->
+        <input type="text" name="q" id="q" placeholder="sobre a nasa?" required> <!--
+            REQUIRED:especifica que um campo de entrada deve ser preenchido antes de enviar o formulário. -->
+        <input type="text" name="a" id="a" placeholder="sobre a area 51?">
+        <input type="email" name="max" id="max" placeholder="E-mail" required>
+        <input type="submit" value="Pesquisar"> <!--Ao clicar em pesquisar no submit, será redirecionado para o servidor descrito no action-->
+    </form>
+    <br>
+    <br>
+    <h1>Veja o exercício principal <a href="pag02.html" target="_blank">Aqui</a></h1>
+</body>
+</html>
