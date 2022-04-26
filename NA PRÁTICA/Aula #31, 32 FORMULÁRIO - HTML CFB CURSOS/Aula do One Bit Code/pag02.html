@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro da liga dos astronautas</title>
+    <style>
+        form {
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
     <h3>Cadastro da liga dos astronautas</h3>
@@ -39,10 +44,38 @@
             Gênero: 
             <label for="female">F</label>
             <input type="radio" name="gender" id="female" value="female">
-            <label for="male">M</label>
-            <input type="radio" name="gender" id="male" value="male">
-        </div>
+            <label for="male">M</label> <!--male = masculino-->
+            <input type="radio" name="gender" id="male" value="male"> <!--Input type radio, deve ter mesmo name-->
 
+        </div>
+        <br>
+        <div>
+            Suas principais qualidades:
+            <br>
+            <label for="int">Inteligência</label>
+            <input type="checkbox" name="int" id="int"> | 
+            <label for="res">Resiliência</label>
+            <input type="checkbox" name="res" id="res"> | 
+            <label for="fis">Preparo físico</label>
+            <input type="checkbox" name="fis" id="fis"> | 
+            <label for="edu">Educação</label>
+            <input type="checkbox" name="edu" id="edu"> | 
+        </div>
+        <br>
+        <textarea name="txt" id="txt" cols="30" rows="10" placeholder="Porque você gostaria de ser um programador?"></textarea>
+        <br>
+        <br>
+        <div>
+            <label for="service">Service:</label>
+            <input type="search" name="service" id="service" list="services">
+            <datalist id="services">
+                <option value="vc quer ser um programador java?"></option>
+                <option value="vc quer ser um programador js?"></option>
+                <option value="vc quer ser um programador ruby?"></option>
+            </datalist>
+        </div>
+        <br>
+        <input type="submit" value="Criar">
     </form>
 </body>
 </html>
